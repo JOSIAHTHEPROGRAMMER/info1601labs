@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Pigeon Site</title>
+
+    <style>
+      /*
+      ID: 816040879
+      Name: Josiah Alexis
+      Course: INFO1601
+      ASSIGNMENT: 1
+      */
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        min-height: 100%;
+        color: black;
+      }
+
+      header {
+        padding: 1em;
+        background-color: #0056b3;
+      }
+
+      header h1 {
+        color: whitesmoke;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+
+      nav ul li {
+        margin-right: 1em;
+        background-color: rgb(187, 197, 207);
+        border-radius: 10px;
+        padding: 6px;
+        margin-right: 20px;
+      }
+
+      main {
+        padding: 200px;
+        background-color: rgb(187, 197, 207);
+      }
+
+      section {
+        box-sizing: border-box;
+
+        padding: 1.5em;
+        min-height: 500px;
+        margin-left: 76.7969px;
+        margin-right: 76.8125px;
+        background-color: white;
+        border-radius: 4px;
+        width: 614.391px;
+        min-width: 614.391px;
+        border: 1px solid rgb(221, 221, 221);
+      }
+
+      section h1 {
+        margin-top: 0;
+      }
+
+      a {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      li:hover {
+        transform: scale(1.25) perspective(1px);
+      }
+
+      a:active {
+        background-color: rgb(168, 176, 185);
+      }
+
+      table {
+        width: 100%;
+      }
+
+      th,
+      td {
+        padding: 1em;
+        border: 1px solid rgb(221, 221, 221);
+        text-align: left;
+      }
+
+      form {
+        padding: 1em;
+      }
+
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+      }
+
+      input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        padding: 0.5em 1em;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      #picture {
+        margin-top: -50px;
+        margin-bottom: 40px;
+      }
+
+      #trivia {
+        margin-bottom: 40px;
+      }
+
+      #famous-pigeons {
+        margin-bottom: 40px;
+      }
+
+      summary {
+        background-color: rgb(217, 220, 214);
+        padding: 1em;
+      }
+
+      section details {
+        padding: 1em;
+        margin: 1em;
+      }
+
+      footer {
+        margin-top: -34px;
+        background-color: #007bff;
+        padding: 24px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>The Pigeon Site</h1>
+      <nav>
+        <ul>
+          <li><a href="#picture">Picture</a></li>
+          <li><a href="#trivia">Trivia</a></li>
+          <li><a href="#famous-pigeons">Famous Pigeons</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="picture">
+        <h1>Picture</h1>
+        <img src="pigeon.jpg" alt="pigeon" />
+      </section>
+
+      <section id="trivia">
+        <h1>Trivia</h1>
+        <details>
+          <summary>They Understand Space and Time</summary>
+          <p>
+            A 2017 study found pigeons could evaluate the time it takes a
+            digital line to be drawn according to its length.
+          </p>
+        </details>
+
+        <details>
+          <summary>They are Excellent at Homing</summary>
+          <p>
+            Pigeons can find their way home from 1300 miles away even if they've
+            been transported in complete isolation.
+          </p>
+        </details>
+
+        <details>
+          <summary>They can diagnose cancer</summary>
+          <p>
+            A 2015 study revealed that pigeons can be trained to diagnose cancer
+            from images with astonishing accuracy of 99%
+          </p>
+        </details>
+      </section>
+
+      <section id="famous-pigeons">
+        <h1>Famous Pigeons</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Bio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>G. I. Joe</td>
+              <td>
+                Flown 20 miles to cancel a bombing on friendly British Troops.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Cher Ami</td>
+              <td>
+                Flown for 25 minutes to deliver a crucial message to base
+                despite being shot at.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Mocker</td>
+              <td>
+                Delivered a life-saving message after losing its eye from
+                artillery fire.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contact">
+        <form>
+          <label>Email</label>
+          <input type="email" placeholder="Please Enter Email" />
+
+          <label>Message</label>
+          <textarea
+            name="long-text"
+            placeholder="Please Enter Message"
+            rows="10"
+            cols="40"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <footer>© 2024 Pigeon</footer>
+  </body>
+</html>
